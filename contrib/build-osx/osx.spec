@@ -5,8 +5,8 @@ from PyInstaller.utils.hooks import collect_data_files, collect_submodules, coll
 import sys
 import os
 
-PACKAGE='Electrum-LTC'
-PYPKG='electrum_ltc'
+PACKAGE='Electrum-BTCC'
+PYPKG='electrum_btcc'
 MAIN_SCRIPT='run_electrum'
 ICONS_FILE='electrum.icns'
 
@@ -50,23 +50,23 @@ binaries += [b for b in collect_dynamic_libs('PyQt5') if 'macstyle' in b[0]]
 
 # We don't put these files in to actually include them in the script but to make the Analysis method scan them for imports
 a = Analysis([electrum+ MAIN_SCRIPT,
-              electrum+'electrum_ltc/gui/qt/main_window.py',
-              electrum+'electrum_ltc/gui/text.py',
-              electrum+'electrum_ltc/util.py',
-              electrum+'electrum_ltc/wallet.py',
-              electrum+'electrum_ltc/simple_config.py',
-              electrum+'electrum_ltc/bitcoin.py',
-              electrum+'electrum_ltc/dnssec.py',
-              electrum+'electrum_ltc/commands.py',
-              electrum+'electrum_ltc/plugins/cosigner_pool/qt.py',
-              electrum+'electrum_ltc/plugins/email_requests/qt.py',
-              electrum+'electrum_ltc/plugins/trezor/client.py',
-              electrum+'electrum_ltc/plugins/trezor/qt.py',
-              electrum+'electrum_ltc/plugins/safe_t/client.py',
-              electrum+'electrum_ltc/plugins/safe_t/qt.py',
-              electrum+'electrum_ltc/plugins/keepkey/qt.py',
-              electrum+'electrum_ltc/plugins/ledger/qt.py',
-              electrum+'electrum_ltc/plugins/coldcard/qt.py',
+              electrum+'electrum_btcc/gui/qt/main_window.py',
+              electrum+'electrum_btcc/gui/text.py',
+              electrum+'electrum_btcc/util.py',
+              electrum+'electrum_btcc/wallet.py',
+              electrum+'electrum_btcc/simple_config.py',
+              electrum+'electrum_btcc/bitcoin.py',
+              electrum+'electrum_btcc/dnssec.py',
+              electrum+'electrum_btcc/commands.py',
+              electrum+'electrum_btcc/plugins/cosigner_pool/qt.py',
+              electrum+'electrum_btcc/plugins/email_requests/qt.py',
+              electrum+'electrum_btcc/plugins/trezor/client.py',
+              electrum+'electrum_btcc/plugins/trezor/qt.py',
+              electrum+'electrum_btcc/plugins/safe_t/client.py',
+              electrum+'electrum_btcc/plugins/safe_t/qt.py',
+              electrum+'electrum_btcc/plugins/keepkey/qt.py',
+              electrum+'electrum_btcc/plugins/ledger/qt.py',
+              electrum+'electrum_btcc/plugins/coldcard/qt.py',
               ],
              binaries=binaries,
              datas=datas,

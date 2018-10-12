@@ -5,7 +5,7 @@ build/
 dist/
 *.egg/
 contrib/pyinstaller/
-Electrum_LTC.egg-info/
+Electrum_BTCC.egg-info/
 locale/
 .devlocaltmp/
 *_trial_temp
@@ -17,9 +17,9 @@ bin/
 .idea
 
 # icons
-electrum_ltc/gui/qt/icons_rc.py
-electrum_ltc/gui/kivy/theming/light-0.png
-electrum_ltc/gui/kivy/theming/light.atlas
+electrum_btcc/gui/qt/icons_rc.py
+electrum_btcc/gui/kivy/theming/light-0.png
+electrum_btcc/gui/kivy/theming/light.atlas
 
 # tests/tox
 .tox/

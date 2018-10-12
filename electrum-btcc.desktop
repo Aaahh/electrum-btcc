@@ -1,0 +1,21 @@
+# If you want Electrum to appear in a Linux app launcher ("start menu"), install this by doing:
+# sudo desktop-file-install electrum-btcc.desktop
+
+[Desktop Entry]
+Comment=Lightweight Bitcored Client
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrum-btcc %u"
+GenericName[en_US]=Bitcored Wallet
+GenericName=Bitcored Wallet
+Icon=electrum-btcc
+Name[en_US]=electrum-btcc.desktop
+Name=Electrum Bitcored Wallet
+Categories=Finance;Network;
+StartupNotify=false
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/bitcored;
+Actions=Testnet;
+
+[Desktop Action Testnet]
+Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\" electrum-btcc --testnet %u"
+Name=Testnet mode
